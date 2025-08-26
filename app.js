@@ -25,3 +25,13 @@ arrows.forEach((arrow, i) => {
     requestAnimationFrame(animate);
   });
 });
+
+// dark mode
+const ball = document.querySelector(".toggle-ball");
+ball.addEventListener("click", () => {
+  const items = document.querySelectorAll(".container, .navbar,.sidebar,sidebar i,.toggle-ball,.movie-list-filter select , .toggle");
+items.forEach(item => {
+  item.classList.toggle("active");
+});
+  ;});
+
